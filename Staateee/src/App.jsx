@@ -82,7 +82,7 @@
 
 // export default App
 
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
 // const App = () => {
 //   const [val, setVal] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9]);
@@ -108,28 +108,42 @@ import React, { useState } from "react";
 
 // import React from "react";
 
-const App = () => {
-  const [val, setVal] = useState([
-    { name: "pritam", age: 24 },
-    { name: "sweta", age: 24 },
-  ]);
+// const App = () => {
+//   const [val, setVal] = useState([
+//     { name: "pritam", age: 24 },
+//     { name: "sweta", age: 24 },
+//   ]);
 
+//   return (
+//     <div>
+//       {val.map((item) => (
+//         <div>
+//           <h1>{item.name}</h1>
+//         <h2>{item.age}</h2>
+//         </div>
+//       ))}
+
+//       <button 
+//       onClick={() =>setVal(()=>val.map(item => item.name === "sweta" ? ({name:"sweta", age:26}) : item))}
+//       className="px-2 py-1 text-xs text-white rounded-full bg-blue-500">
+//         Click
+//       </button>
+//     </div>
+//   );
+// };
+
+// export default App;
+
+
+import React from 'react';
+import Card from './components/Card';
+
+function App() {
   return (
-    <div>
-      {val.map((item) => (
-        <div>
-          <h1>{item.name}</h1>
-        <h2>{item.age}</h2>
-        </div>
-      ))}
-
-      <button 
-      onClick={() =>setVal(()=>val.map(item => item.name === "sweta" ? ({name:"sweta", age:26}) : item))}
-      className="px-2 py-1 text-xs text-white rounded-full bg-blue-500">
-        Click
-      </button>
-    </div>
-  );
-};
+   <>
+   <Card/>
+   </>
+  )
+}
 
 export default App;
